@@ -14,9 +14,9 @@ public partial class MainPage : ContentPage
 		count++;
 
 		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
+			CounterBtn.Text = $"You rated {count} star";
 		else
-			CounterBtn.Text = $"Clicked {count} times";
+			CounterBtn.Text = $"You rated {count} stars";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
